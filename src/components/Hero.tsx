@@ -70,7 +70,7 @@ const Hero = () => {
       {/* Call Now Floating Button */}
 <div className="fixed bottom-6 right-6 z-30">
   <a
-    href="tel:+916370957399" // Replace with your actual number
+    href="tel:+916378143114" // Replace with your actual number
     className="bg-amber-500 hover:bg-amber-600 text-white px-4 py-3 rounded-full shadow-lg flex items-center space-x-2 transition-all duration-300"
   >
     <svg
