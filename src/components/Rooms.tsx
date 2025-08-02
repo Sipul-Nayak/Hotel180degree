@@ -11,7 +11,7 @@ const Rooms = () => {
       price: 1550,
       originalPrice: 1800,
       image:  Room1,
-      features: ['Non-Refundable', 'Housekeeping', 'Telephone', 'Breakfast','closet','24-hour Room Service'],
+      features: ['Non-Refundable','24-hour Room Service', 'Housekeeping', 'Telephone', 'Breakfast','closet'],
       description: 'Ideal for budget-conscious travelers without compromising on essentials.Enjoy a peaceful stay with all basic amenities and great service.',
       size: '13 sqm',
       beds: '1 Double Bed',
