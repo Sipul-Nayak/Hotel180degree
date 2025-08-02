@@ -1,4 +1,5 @@
 import {  Shield, Heart } from 'lucide-react';
+import Room4 from './assets/Room4.png'
 
 const About = () => {
   const features = [
@@ -23,15 +24,11 @@ const About = () => {
             </div>
             
             <p className="text-xl text-slate-600 leading-relaxed">
-              For nearly four decades,  Hotel 180 Degree has stood as a beacon of excellence in luxury hospitality. 
-              Nestled in an idyllic setting, we've perfected the art of creating extraordinary experiences that transcend 
-              ordinary accommodation.
+              HOTEL 180 DEGREE, Koraput is one of the best budget hotels in Koraput . HOTEL 180 DEGREE, Koraputensures to offer all hotel facilities to the customers that make their stay memorable and pleasant.
             </p>
             
             <p className="text-lg text-slate-600 leading-relaxed">
-              Every detail, from our meticulously designed suites to our world-class amenities, reflects our unwavering 
-              commitment to providing guests with memories that last a lifetime. Our dedicated team ensures that your 
-              every need is anticipated and exceeded.
+             Whether you are on business trip to Koraput or on holiday retreat, the hotel facilities offered at HOTEL 180 DEGREE, Koraput ensure total comfort and convenience to guests during their stay.
             </p>
 
             {/* Features */}
@@ -54,7 +51,7 @@ const About = () => {
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src="https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
+                src={Room4}
                 alt="Luxury Hotel Lobby"
                 className="w-full h-auto"
               />

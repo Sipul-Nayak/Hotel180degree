@@ -1,47 +1,50 @@
 import { Users, Bed, Bath, Maximize, Star } from 'lucide-react';
+import Room1 from "./assets/Room1.png";
+import Room6 from "./assets/Room6.png";
+import Room2 from "./assets/Room2.png";
 
 const Rooms = () => {
   const rooms = [
     {
       id: 1,
-      name: 'Ocean View Deluxe',
+      name: 'Non AC Room ',
       price: 1550,
       originalPrice: 1800,
-      image: 'https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop',
-      features: ['Ocean View', 'Private Balcony', 'Premium WiFi', 'Mini Bar'],
-      description: 'Wake up to breathtaking ocean views in this elegantly appointed room featuring modern amenities and a private balcony.',
-      size: '45 sqm',
-      beds: '1 King Bed',
-      bathrooms: '1 Luxury Bathroom',
+      image:  Room1,
+      features: ['Non-Refundable', 'Housekeeping', 'Telephone', 'Breakfast','closet','24-hour Room Service'],
+      description: 'Ideal for budget-conscious travelers without compromising on essentials.Enjoy a peaceful stay with all basic amenities and great service.',
+      size: '13 sqm',
+      beds: '1 Double Bed',
+      bathrooms: '1 Bathroom',
       maxGuests: 2,
       rating: 4.9
     },
     {
       id: 2,
-      name: 'Executive Suite',
-      price: 1550,
-      originalPrice: 1800,
-      image: 'https://images.pexels.com/photos/271643/pexels-photo-271643.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop',
-      features: ['Separate Living Area', 'Work Desk', 'City Views', 'Premium Amenities'],
-      description: 'Spacious suite ideal for business travelers, offering comfort and functionality.Includes a separate living area for meetings or relaxation.',
-      size: '75 sqm',
+      name: 'AC Room',
+      price: 1900,
+      originalPrice: 2250,
+      image: Room2,
+      features: ['Refundable Before CheckIn', 'closet', 'Housekeeping', 'Air Conditioning', 'Premium Wifi','24-hour Room Service'],
+      description: 'Experience cool comfort in our well-furnished air-conditioned room. Perfect for solo travelers or couples seeking a relaxing and peaceful stay.',
+      size: '13 sqm',
       beds: '1 King Bed',
-      bathrooms: '2 Full Bathrooms',
-      maxGuests: 3,
+      bathrooms: '1 Luxury Bathroom',
+      maxGuests: 2,
       rating: 4.8
     },
     {
       id: 3,
-      name: 'Presidential Villa',
-      price: 1550,
-      originalPrice: 1800,
-      image: 'https://images.pexels.com/photos/1743229/pexels-photo-1743229.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop',
-      features: ['Private Pool', 'Butler Service', 'Garden Terrace', 'Gourmet Kitchen'],
-      description: 'Ultimate luxury villa with private pool, dedicated butler service, and expansive living spaces for the most discerning guests.',
-      size: '200 sqm',
-      beds: '3 King Beds',
-      bathrooms: '3 Luxury Bathrooms',
-      maxGuests: 6,
+      name: 'AC Room',
+      price: 2450,
+      originalPrice: 2900,
+      image: Room6,
+      features: ['Refundable Before CheckIn', 'Breakfast', 'Housekeeping', 'Air Conditioning', 'Premium Wifi','24-hour Room Service'],
+      description: 'Unwind in our premium AC room, designed for maximum comfort and relaxation.Ideal for couples or solo travelers looking for a quality stay.',
+      size: '13 sqm',
+      beds: '1 Double Bed',
+      bathrooms: '1 Luxury Bathrooms',
+      maxGuests: 2,
       rating: 5.0
     }
   ];

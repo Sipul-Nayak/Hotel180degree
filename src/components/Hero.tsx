@@ -67,6 +67,30 @@ const Hero = () => {
       <div className="absolute bottom-0 left-0 right-0 transform translate-y-1/2 z-20">
         <SearchWidget />
       </div>
+      {/* Call Now Floating Button */}
+<div className="fixed bottom-6 right-6 z-30">
+  <a
+    href="tel:+916370957399" // Replace with your actual number
+    className="bg-amber-500 hover:bg-amber-600 text-white px-4 py-3 rounded-full shadow-lg flex items-center space-x-2 transition-all duration-300"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      className="h-5 w-5"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        d="M3 5a2 2 0 012-2h1.5a1 1 0 011 1v2.5a1 1 0 01-1 1H5.5a1 1 0 00-.991 1.142A11.017 11.017 0 0012 21a11.017 11.017 0 008.349-11.358A1 1 0 0019.5 8.5H17a1 1 0 01-1-1V5a1 1 0 011-1H19a2 2 0 012 2v2a9.01 9.01 0 01-9 9 9.01 9.01 0 01-9-9V5z"
+      />
+    </svg>
+    <span className="font-semibold">Call Now</span>
+  </a>
+</div>
+
     </section>
   );
 };

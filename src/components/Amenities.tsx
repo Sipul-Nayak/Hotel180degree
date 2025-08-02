@@ -87,7 +87,7 @@ const Amenities = () => {
         </div>
 
         {/* Feature Showcase */}
-        <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+        {/* <div className="relative rounded-2xl overflow-hidden shadow-2xl">
           <img
             src="https://images.pexels.com/photos/261169/pexels-photo-261169.jpeg?auto=compress&cs=tinysrgb&w=1400&h=600&fit=crop"
             alt="Luxury Pool Area"
@@ -107,7 +107,7 @@ const Amenities = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

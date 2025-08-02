@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Search, Calendar, Users } from 'lucide-react';
+import {  Calendar, Users, Phone } from 'lucide-react';
 
 const SearchWidget = () => {
   const [searchData, setSearchData] = useState({
@@ -15,15 +15,13 @@ const SearchWidget = () => {
   };
 
   const handleSearch = () => {
+  const message = "Hi, I’d like to speak with someone about room availability. Please give me a call.";
+  const encodedMessage = encodeURIComponent(message);
+  const phoneNumber = '916378143114'; // ✅ Include country code (e.g., 91 for India)
+  const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+  window.open(whatsappURL, '_blank');
+};
 
-const message = `Hello, I’m interested in booking a room at your hotel. Could you please provide more details regarding availability and pricing?`;
-
-    const encodedMessage = encodeURIComponent(message);
-
-    const phoneNumber = '6378143114'; // 🔁 Replace with your WhatsApp number
-    const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
-    window.open(whatsappURL, '_blank');
-  };
 
   return (
     <div className="container mx-auto px-6 pb-48">
@@ -100,8 +98,8 @@ const message = `Hello, I’m interested in booking a room at your hotel. Could 
               onClick={handleSearch}
               className="w-full bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white py-4 px-8 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-3 shadow-lg"
             >
-              <Search size={22} />
-              <span>Search Availability</span>
+              <Phone size={22} />
+              <span>Check Now</span>
             </button>
           </div>
         </div>

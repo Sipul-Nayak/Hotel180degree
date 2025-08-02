@@ -1,32 +1,39 @@
 import  { useState } from 'react';
 import { X } from 'lucide-react';
+import Room1 from "./assets/Room1.png"
+import Room2 from "./assets/Room2.png"
+import Room7 from "./assets/Room7.png"
+import Room4 from "./assets/Room4.png"
+import Room5 from "./assets/Room5.png"
+import Room6 from "./assets/Room6.png"
+
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const images = [
     {
-      src: 'https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop',
+      src: Room1,
       alt: 'Hotel Exterior'
     },
     {
-      src: 'https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop',
+      src: Room2,
       alt: 'Luxury Room'
     },
     {
-      src: 'https://images.pexels.com/photos/261169/pexels-photo-261169.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop',
-      alt: 'Swimming Pool'
+      src: Room4,
+      alt: ' AC Room'
     },
     {
-      src: 'https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop',
+      src:Room7,
       alt: 'Hotel Lobby'
     },
     {
-      src: 'https://images.pexels.com/photos/1743229/pexels-photo-1743229.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop',
+      src: Room5,
       alt: 'Premium Suite'
     },
     {
-      src: 'https://images.pexels.com/photos/271643/pexels-photo-271643.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop',
+      src: Room6,
       alt: 'Dining Area'
     }
   ];
